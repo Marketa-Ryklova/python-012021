@@ -1,3 +1,4 @@
+# je to pracovní verze?
 sklad = {
   "1N4148": 250,
   "BAV21": 54,
