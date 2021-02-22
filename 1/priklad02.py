@@ -16,8 +16,10 @@ if not cisloSoucastky in sklad:
 elif sklad[cisloSoucastky] < mnozstvi:
   print("Lze prodat pouze omezené množství")
   sklad.pop(cisloSoucastky)
-else:
+elif mnozstvi <= sklad[cisloSoucastky]:
   print("Poptávku lze uspokojit v plné výši")
+  odecteniSoucastek = sklad[cisloSoucastky] - mnozstvi
+  print(f"Počet součástek na skladě {odecteniSoucastek} ks")
 
 
 
