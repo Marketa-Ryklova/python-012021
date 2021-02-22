@@ -6,16 +6,16 @@ sklad = {
   "2N7002": 97,
   "BC547C": 10
 }
-čísloSoučástky = input("Jaké je číslo součástky?: ")
-čísloSoučástky = str(čísloSoučástky)
-množství = input("Kolik KS součástky?: ")
-množství = int(množství)
+cisloSoucastky = input("Jaké je číslo součástky?: ")
+cisloSoucastky = str(cisloSoucastky)
+mnozstvi = input("Kolik KS součástky?: ")
+mnozstvi = int(mnozstvi)
 
-if not čísloSoučástky in sklad:
+if not cisloSoucastky in sklad:
   print("Součástka není skladem")
-elif sklad[čísloSoučástky] < množství:
+elif sklad[cisloSoucastky] < mnozstvi:
   print("Lze prodat pouze omezené množství")
-  sklad.pop(čísloSoučástky)
+  sklad.pop(cisloSoucastky)
 else:
   print("Poptávku lze uspokojit v plné výši")
 
