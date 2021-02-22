@@ -12,10 +12,11 @@ množství = int(množství)
 
 if not čísloSoučástky in sklad:
   print("Součástka není skladem")
-
-if sklad[čísloSoučástky] < množství:
+elif sklad[čísloSoučástky] < množství:
   print("Lze prodat pouze omezené množství")
   sklad.pop(čísloSoučástky)
 else:
   print("Poptávku lze uspokojit v plné výši")
+
+
 
