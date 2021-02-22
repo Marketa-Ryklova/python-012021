@@ -18,5 +18,7 @@ titul = str(titul)
 
 if titul in prodeje2019 and titul in prodeje2020:
   print (prodeje2019[titul] + (prodeje2020[titul]))
-else:
+elif titul in prodeje2020:
   print(prodeje2020[titul])
+else:
+  print("Tuto knihu nemáme v databázi")
