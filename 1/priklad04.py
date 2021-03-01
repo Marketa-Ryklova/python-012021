@@ -47,7 +47,8 @@ morseCode = {
 }
 text = input("Zadej text k překladu do Morseovy abecedy: ")
 text = str(text)
+morseCode[' '] = "/"
 
 for znak in text :
     if znak in morseCode:
-        print (morseCode[znak])
+        print (morseCode[znak], end=" ")
