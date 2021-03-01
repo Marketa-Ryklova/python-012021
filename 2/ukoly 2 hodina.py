@@ -1,0 +1,44 @@
+books = [
+    {"title": "Vražda s příliš mnoha notami", "pages": 450, "rating": 5},
+    {"title": "Vražda podle knihy", "pages": 524, "rating": 9},
+    {"title": "Past", "pages": 390, "rating": 4},
+    {"title": "Popel popelu", "pages": 411, "rating": 10},
+    {"title": "Noc, která mě zabila", "pages": 159, "rating": 7},
+    {"title": "Vražda, kouř a stíny", "pages": 258, "rating": 6},
+    {"title": "Zločinný steh", "pages": 542, "rating": 8},
+    {"title": "Zkus mě chytit", "pages": 247, "rating": 7},
+    {"title": "Vrah zavolá v deset", "pages": 396, "rating": 6},
+]
+totalPages = 0
+for book in books:
+    totalPages += book["pages"]
+  print(totalPages)
+
+  if book['rating'] >= 8
+    book_8 = +1
+
+
+schoolReport = {
+  "Český jazyk": 1,
+  "Anglický jazyk": 1,
+  "Matematika": 1,
+  "Přírodopis": 2,
+  "Dějepis": 1,
+  "Fyzika": 2,
+  "Hudební výchova": 4,
+  "Výtvarná výchova": 2,
+  "Tělešná výchova": 3,
+  "Chemie": 4,
+}
+for item in schoolReport:
+
+
+
+
+
+plates = {"4A2 3000": "František Novák",
+            "6P5 4747": "Jana Pilná",
+            "3B7 3652": "Jaroslav Sečkár",
+            "1P5 5269": "Marta Nováková",
+            "37E 1252": "Martina Matušková",
+            "2A5 2241": "Jan Král"}
