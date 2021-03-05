@@ -12,10 +12,9 @@ books = [
 totalPages = 0
 for book in books:
     totalPages += book["pages"]
-  print(totalPages)
 
-  if book['rating'] >= 8
-    book_8 = +1
+
+
 
 
 schoolReport = {
@@ -30,8 +29,6 @@ schoolReport = {
   "Tělešná výchova": 3,
   "Chemie": 4,
 }
-for item in schoolReport:
-
 
 
 
@@ -42,3 +39,7 @@ plates = {"4A2 3000": "František Novák",
             "1P5 5269": "Marta Nováková",
             "37E 1252": "Martina Matušková",
             "2A5 2241": "Jan Král"}
+
+for spz, majitel in plates.items():
+  if spz [1] == 'P':
+    print(majitel)
