@@ -495,18 +495,13 @@ customerRegion = input("Zadej region: ")
 customerRegion = str(customerRegion)
 
 subregion_population = {}
-
-for item in staty:
-  subregion = item["subregion"]
-  population = item["population"]
-  if subregion in subregion_population:
-    subregion_population[subregion] += population
-  else:
-    subregion_population[subregion] = population
-    if subregion, value in subregion_population.items():
-      total_population += population
-      print  (f"{subregion}: {population}")
-
 total_population = 0
 
+for stat in staty:
+  subregion = stat['subregion']
+  population = stat['population']
+  if stat ['region'] == customerRegion:
+    total_population += population
+    subregion_population[subregion] = total_population
+print(subregion_population)
 
