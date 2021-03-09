@@ -10,8 +10,14 @@ books = [
     {"title": "Vrah zavolá v deset", "pages": 396, "rating": 6},
 ]
 totalPages = 0
+book_8 = 0
 for book in books:
     totalPages += book["pages"]
+
+    if book['rating'] >= 8:
+      book_8 +=1
+print(totalPages)
+print(book_8)
 
 
 
@@ -29,6 +35,12 @@ schoolReport = {
   "Tělešná výchova": 3,
   "Chemie": 4,
 }
+
+sum_marks = 0
+for subject, mark in schoolReport.items:
+  sum_marks += mark
+
+print(sum_marks/len(schoolReport))
 
 
 
