@@ -11,6 +11,7 @@ class Car:
   def pujc_auto(self):
 
     if self.dostupnost:
+      self.dostupnost = False
       return f"Potvrzuji zapůjčené vozidla"
     if not self.dostupnost:
       return f"Vozidlo není k dispozici"
@@ -19,6 +20,10 @@ class Car:
 car1 = Car("4A2 3020", "Peugeot 403 Cabrio", 47534, True)
 car2 = Car("1P3 4747", "Škoda Octavia", 41253, True)
 
-#question= input("Jakou značku auta si přejete půjčit?") [Peugeot/Škoda]
-#question = str(question)
+print(car1.getInfo())
+car1.pujc_auto()
+print(car1.getInfo())
+
+question= input("Jakou značku auta si přejete půjčit?") [Peugeot/Škoda]
+question = str(question)
 

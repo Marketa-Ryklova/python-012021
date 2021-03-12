@@ -499,6 +499,6 @@ for item in staty:
     print (item["name"])
 
 
-if not found_state in staty :
+if found_state in staty :
     print("Neznámý region")
 
