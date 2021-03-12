@@ -15,5 +15,5 @@ class Employee:
 
 pepa = Employee("Josef Novák", "junior developer", 35000, 2)
 pepa.get_info()
-print(pepa.get_info(), end = ')
+print(pepa.get_info(), end = '')
 print(pepa.get_net_salary())
