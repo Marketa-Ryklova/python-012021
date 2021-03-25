@@ -2,13 +2,15 @@ import pandas
 import wget
 #wget.download("https://raw.githubusercontent.com/pesikj/python-012021/master/zadani/5/country_vaccinations.csv")
 vaccination = pandas.read_csv("country_vaccinations.csv")
-vaccination = vaccination.set_index("date")
+vaccination = vaccination.set_index("country")
 
-#vaccination.info()
-#print(vaccination.loc["2021-03-10", "country" : "total_vaccinations"])
-#print(vaccination[vaccination["total_vaccinations"] > 1000000])
-#vakcinace = vaccination[vaccination["total_vaccinations"] > 1000000]
-#print(vakcinace[["country"]])
-#print(vaccination.loc["2021-03-10", "total_vaccinations"] > 1_000_000)
-vakcinace = vaccination[vaccination.loc["2021-03-10", "total_vaccinations"] > 1_000_000]
+vaccination.info()
+print(vaccination.loc["2021-03-10", "country" : "total_vaccinations"])
+#dotaz na počty očkovaných
+vakcinace = vaccination[(vaccination["total_vaccinations"] > 1_000_000) & (vaccination["date"] == "2021-03-10")]
 print(vakcinace)
+#2021-03-10 naočkovano vic než 1 mil osob
+extremni_hodnoty = vaccination[(vaccination["date"] == "2021-03-10") & (vaccination["total_vaccinations"] > 100_000) | (vaccination["date"] == "2021-03-10") & (vaccination["total_vaccinations"] < 100_000)]
+print(extremni_hodnoty)
+#dotaz na extrémní hodnoy, nevím, jestli jsem správně pochopila zadání..
+
