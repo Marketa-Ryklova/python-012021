@@ -4,7 +4,10 @@ import wget
 twlo = pandas.read_csv("twlo.csv")
 
 twlo.info()
-print(twlo.loc[301])
-print(twlo.iloc[:6])
-print(twlo.head(6))
-print(twlo.tail(11))
+#informace o řadcích a sloupcích
+print(twlo.iloc[:5])
+#zobrazení 5. řádků pomocí iloc
+print(twlo.head(5))
+#zobrazení 5 řádků pomocí head
+print(twlo.tail(1))
+#zobrazení posledního řádku
