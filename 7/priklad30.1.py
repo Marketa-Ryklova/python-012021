@@ -20,3 +20,4 @@ print(razeni.head())
 #5mest s nejvyssi teplotou
 print(razeni.tail())
 #5 mest s nejnizsi teplotou
+
